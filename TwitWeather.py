@@ -60,4 +60,4 @@ def get_weather():
 if __name__ == '__main__':
     desc = get_weather()
     tweet(desc)
-    time.sleep(86400)
+    time.sleep(60)
