@@ -18,6 +18,7 @@ api = twitter.Api(
 
 def tweet(desc):
     content = '@mhr380'
+    content += '"""Tweeted by Bot"""'
     for item in desc:
         content += ' ' 
         content += item
@@ -60,4 +61,4 @@ def get_weather():
 if __name__ == '__main__':
     desc = get_weather()
     tweet(desc)
-    time.sleep(60)
+    time.sleep(86400)
