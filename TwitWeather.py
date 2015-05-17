@@ -18,10 +18,10 @@ api = twitter.Api(
 
 def tweet(desc):
     content = '@mhr380'
-    content += '"""Tweeted by Bot"""'
     for item in desc:
         content += ' ' 
         content += item
+    content += ' """Tweeted by Bot"""'
 
     print content
     status = api.PostUpdate(content)
@@ -61,4 +61,5 @@ def get_weather():
 if __name__ == '__main__':
     desc = get_weather()
     tweet(desc)
+    print 'tweeted!'
     time.sleep(86400)
